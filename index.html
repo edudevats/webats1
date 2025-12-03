@@ -39,30 +39,56 @@
     </header>
 
     <section id="home" class="hero">
-        <h1>El Futuro es Local</h1>
-        <p>Potencia tu empresa con Inteligencia Artificial segura y Desarrollo de Software a medida. Automatización sin
-            Inteligencia Artificial. Nuestra misión es democratizar el acceso a tecnologías avanzadas, permitiendo a las
-            empresas competir en la era digital con herramientas seguras y eficientes.</p>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>El Futuro es Local</h1>
+                <p>Potencia tu empresa con Inteligencia Artificial segura y Desarrollo de Software a medida.
+                    Automatización sin
+                    Inteligencia Artificial. Nuestra misión es democratizar el acceso a tecnologías avanzadas,
+                    permitiendo a las
+                    empresas competir en la era digital con herramientas seguras y eficientes.</p>
+            </div>
+            <div class="hero-image">
+                <img src="assets/mano.png" alt="Inteligencia Artificial">
+            </div>
+        </div>
     </section>
 
     <section id="services" class="services">
         <h2>Nuestros Servicios</h2>
-        <div class="services-grid">
-            <div class="card">
-                <img src="assets/service-ai.png" alt="AI Icon">
-                <h3>Inteligencia Artificial</h3>
-                <p>Automatización inteligente y modelos locales para optimizar tu negocio.</p>
+        <div class="carousel-container">
+            <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                        <div class="card" style="background-image: url('assets/service-ai.png');">
+                            <div class="card-content">
+                                <h3>Inteligencia Artificial</h3>
+                                <p>Automatización inteligente y modelos locales para optimizar tu negocio.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="card" style="background-image: url('assets/service-dev.png');">
+                            <div class="card-content">
+                                <h3>Desarrollo de Software</h3>
+                                <p>Soluciones a medida, desde web apps hasta sistemas empresariales complejos.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="card" style="background-image: url('assets/service-auto.png');">
+                            <div class="card-content">
+                                <h3>Automatización</h3>
+                                <p>Optimiza flujos de trabajo y reduce costos con soluciones automatizadas.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Duplicate slides for demo purposes if needed to show "3 at a time" scrolling, 
+                          but for now we have 3 total. To show 3 at a time, we just need to fit them in the container. -->
+                </ul>
             </div>
-            <div class="card">
-                <img src="assets/service-dev.png" alt="Dev Icon">
-                <h3>Desarrollo de Software</h3>
-                <p>Soluciones a medida, desde web apps hasta sistemas empresariales complejos.</p>
-            </div>
-            <div class="card">
-                <img src="assets/service-auto.png" alt="Automation Icon">
-                <h3>Automatización</h3>
-                <p>Optimiza flujos de trabajo y reduce costos con soluciones automatizadas.</p>
-            </div>
+            <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
         </div>
     </section>
 
