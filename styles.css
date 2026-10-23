@@ -290,6 +290,10 @@ nav a:focus-visible {
     width: min(100%, 420px);
     height: auto;
     animation: float 6s ease-in-out infinite;
+    /* The artwork is cropped inside the file (a hard edge near the right).
+       Fade that side out before the cut so it dissolves into the hero. */
+    -webkit-mask-image: linear-gradient(to right, #000 64%, transparent 90%);
+    mask-image: linear-gradient(to right, #000 64%, transparent 90%);
 }
 
 @keyframes float {
