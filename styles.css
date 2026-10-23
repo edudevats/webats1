@@ -380,7 +380,7 @@ nav a:focus-visible {
     margin: 0;
     padding: 0.25rem 0 0.5rem;
     transition: transform 0.45s ease;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .carousel-slide {
@@ -401,6 +401,7 @@ nav a:focus-visible {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     background: var(--bg-raised);
     border: 1px solid rgba(213, 216, 222, 0.14);
     border-radius: 16px;
@@ -440,6 +441,11 @@ nav a:focus-visible {
 .card h3 {
     font-size: 1.15rem;
     text-align: left;
+    min-height: 2.4em;
+}
+
+.card-lead {
+    min-height: 3.2em;
 }
 
 .card p,
@@ -456,7 +462,7 @@ nav a:focus-visible {
 
 .card .btn {
     width: 100%;
-    margin-top: 0.35rem;
+    margin-top: auto;
     white-space: normal;
 }
 
