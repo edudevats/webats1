@@ -1,34 +1,76 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-brand="Abys Technologies Solutions" data-tagline="IA, ingeniería y software">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATS</title>
-    <link rel="stylesheet" href="styles.css">
+    <!--
+      Frase de marca. Para cambiarla, edita estos tres sitios juntos:
+      1. data-brand y data-tagline en <html> (el encabezado los copia al cargar)
+      2. <title>, og:title y twitter:title
+      3. el texto de .company-name y .tagline
+      Correo y WhatsApp viven solo en CONTACT, al inicio de script.js.
+    -->
+    <title>Abys Technologies Solutions | IA, ingeniería y software</title>
+    <meta name="description" content="Abys Technologies Solutions: IA, ingeniería y software. Cursos de IA y agentes, desarrollo, automatización, redes, cámaras de seguridad y paneles industriales.">
+    <link rel="canonical" href="https://abyssol.tech/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Abys Technologies Solutions">
+    <meta property="og:url" content="https://abyssol.tech/">
+    <meta property="og:title" content="Abys Technologies Solutions | IA, ingeniería y software">
+    <meta property="og:description" content="Abys Technologies Solutions: IA, ingeniería y software. Cursos de IA y agentes, desarrollo, automatización, redes, cámaras de seguridad y paneles industriales.">
+    <meta property="og:image" content="https://abyssol.tech/assets/ats-og-image.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Abys Technologies Solutions. IA, ingeniería y software.">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Abys Technologies Solutions | IA, ingeniería y software">
+    <meta name="twitter:description" content="Abys Technologies Solutions: IA, ingeniería y software. Cursos de IA y agentes, desarrollo, automatización, redes, cámaras de seguridad y paneles industriales.">
+    <meta name="twitter:image" content="https://abyssol.tech/assets/ats-og-image.jpg">
+    <meta name="twitter:image:alt" content="Abys Technologies Solutions. IA, ingeniería y software.">
+
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="preload" as="image" href="assets/logo.webp" type="image/webp">
+    <link rel="preload" as="image" href="assets/mano.webp" type="image/webp" fetchpriority="high">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <div id="entrance-overlay">
-        <img src="assets/logo.png" alt="ATS Logo" class="entrance-logo">
+        <picture>
+            <source srcset="assets/logo.webp" type="image/webp">
+            <img src="assets/logo.png" alt="" width="492" height="596" class="entrance-logo">
+        </picture>
         <div class="entrance-text">SYSTEM INITIALIZED</div>
     </div>
 
     <header>
         <div class="logo-container">
-            <img src="assets/logo.png" alt="ATS Logo" class="logo">
-            <span class="company-name">Abys Technologies Solutions</span>
+            <picture>
+                <source srcset="assets/logo.webp" type="image/webp">
+                <img src="assets/logo.png" alt="" width="492" height="596" class="logo">
+            </picture>
+            <div class="brand-lockup">
+                <span class="company-name">Abys Technologies Solutions</span>
+                <span class="tagline">IA, ingeniería y software</span>
+            </div>
         </div>
-        <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <button class="mobile-menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
             <span></span>
             <span></span>
             <span></span>
         </button>
-        <nav>
+        <nav id="site-nav">
             <ul>
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#services">Servicios</a></li>
@@ -38,75 +80,214 @@
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>El Futuro es Local</h1>
-                <p>Potencia tu empresa con Inteligencia Artificial segura y Desarrollo de Software a medida.
-                    Automatización sin
-                    Inteligencia Artificial. Nuestra misión es democratizar el acceso a tecnologías avanzadas,
-                    permitiendo a las
-                    empresas competir en la era digital con herramientas seguras y eficientes.</p>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Lleva a tu empresa al siguiente nivel con IA y tecnología a medida</h1>
+                    <p>Capacitamos a tus directivos y empleados para trabajar con inteligencia artificial y equipos de agentes, y construimos la infraestructura que tu operación necesita: software, automatización, redes, videovigilancia y control industrial.</p>
+                    <div class="hero-actions">
+                        <a class="btn" href="#contact">Agenda una asesoría</a>
+                        <a class="btn btn-quiet" href="#services">Ver servicios</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <picture>
+                        <source srcset="assets/mano.webp" type="image/webp">
+                        <img src="assets/mano.png" alt="Mano digital que representa la tecnología de Abys Technologies Solutions" width="1024" height="1024" fetchpriority="high" decoding="async">
+                    </picture>
+                </div>
             </div>
-            <div class="hero-image">
-                <img src="assets/mano.png" alt="Inteligencia Artificial">
+        </section>
+
+        <section id="services" class="services">
+            <div class="section-heading">
+                <h2>Nuestros servicios</h2>
             </div>
-        </div>
-    </section>
-
-    <section id="services" class="services">
-        <h2>Nuestros Servicios</h2>
-        <div class="carousel-container">
-            <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
-            <div class="carousel-track-container">
-                <ul class="carousel-track">
-                    <li class="carousel-slide current-slide">
-                        <div class="card" style="background-image: url('assets/service-ai.png');">
-                            <div class="card-content">
-                                <h3>Inteligencia Artificial</h3>
-                                <p>Automatización inteligente y modelos locales para optimizar tu negocio.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="carousel-slide">
-                        <div class="card" style="background-image: url('assets/service-dev.png');">
-                            <div class="card-content">
-                                <h3>Desarrollo de Software</h3>
-                                <p>Soluciones a medida, desde web apps hasta sistemas empresariales complejos.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="carousel-slide">
-                        <div class="card" style="background-image: url('assets/service-auto.png');">
-                            <div class="card-content">
-                                <h3>Automatización</h3>
-                                <p>Optimiza flujos de trabajo y reduce costos con soluciones automatizadas.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- Duplicate slides for demo purposes if needed to show "3 at a time" scrolling, 
-                          but for now we have 3 total. To show 3 at a time, we just need to fit them in the container. -->
-                </ul>
+            <div class="carousel" id="services-carousel" aria-roledescription="carrusel" aria-label="Servicios de ATS">
+                <button class="carousel-btn prev" type="button" aria-label="Anterior" aria-controls="service-track">&#10094;</button>
+                <div class="carousel-viewport">
+                    <ul class="carousel-track" id="service-track">
+                        <li class="carousel-slide">
+                            <article class="card">
+                                <div class="card-media">
+                                    <picture>
+                                        <source srcset="assets/ats-card-cursos.webp" type="image/webp">
+                                        <img src="assets/ats-card-cursos.jpg" alt="Equipo en una mesa revisando pantallas durante una capacitación" width="1200" height="675" loading="lazy" decoding="async">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Cursos de IA y agentes para empresas</h3>
+                                    <p>Talleres prácticos para directivos y empleados: cómo usar la inteligencia artificial en el día a día y cómo montar un equipo de agentes que trabaje para tu negocio.</p>
+                                    <ul>
+                                        <li>Programas para dirección y para equipos operativos</li>
+                                        <li>Casos aplicados a tu industria</li>
+                                        <li>Acompañamiento para poner en marcha tus primeros agentes</li>
+                                    </ul>
+                                    <a class="btn" href="#contact" data-service="Cursos de IA y agentes para empresas">Solicita el temario</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="carousel-slide">
+                            <article class="card">
+                                <div class="card-media">
+                                    <picture>
+                                        <source srcset="assets/ats-card-web.webp" type="image/webp">
+                                        <img src="assets/ats-card-web.jpg" alt="Escritorio con monitores mostrando código de software" width="1200" height="675" loading="lazy" decoding="async">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Desarrollo web y software a medida</h3>
+                                    <p>Sitios web, aplicaciones y sistemas empresariales diseñados para tu operación, rápidos, seguros y fáciles de mantener.</p>
+                                    <a class="btn" href="#contact" data-service="Desarrollo web y software a medida">Cotiza tu proyecto</a>
+                                </div>
+                            </article>
+                        </li>
+                        <!-- Automatización comparte ats-card-web hasta que haya una imagen propia. -->
+                        <li class="carousel-slide">
+                            <article class="card">
+                                <div class="card-media">
+                                    <picture>
+                                        <source srcset="assets/ats-card-web.webp" type="image/webp">
+                                        <img src="assets/ats-card-web.jpg" alt="Pantallas con código en un escritorio de trabajo" width="1200" height="675" loading="lazy" decoding="async">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Automatización</h3>
+                                    <p>Conectamos tus sistemas y eliminamos tareas repetitivas para que tu equipo dedique su tiempo a lo que genera valor.</p>
+                                    <a class="btn" href="#contact" data-service="Automatización">Cuéntanos qué proceso quieres automatizar</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="carousel-slide">
+                            <article class="card">
+                                <div class="card-media">
+                                    <picture>
+                                        <source srcset="assets/ats-card-redes.webp" type="image/webp">
+                                        <img src="assets/ats-card-redes.jpg" alt="Rack de telecomunicaciones con cableado de red" width="1200" height="675" loading="lazy" decoding="async">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Cableado estructurado y redes</h3>
+                                    <p>Diseño e instalación de cableado estructurado y redes para oficinas, naves y plantas: una infraestructura ordenada, estable y lista para crecer.</p>
+                                    <a class="btn" href="#contact" data-service="Cableado estructurado y redes">Solicita una visita técnica</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="carousel-slide">
+                            <article class="card">
+                                <div class="card-media">
+                                    <picture>
+                                        <source srcset="assets/ats-card-camaras.webp" type="image/webp">
+                                        <img src="assets/ats-card-camaras.jpg" alt="Cámara de seguridad tipo domo en una oficina" width="1200" height="675" loading="lazy" decoding="async">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Cámaras de seguridad</h3>
+                                    <p>Instalación de sistemas de videovigilancia para oficinas, comercios, naves y plantas, integrados con tu red para que puedas ver lo que pasa en tu empresa desde cualquier lugar.</p>
+                                    <a class="btn" href="#contact" data-service="Cámaras de seguridad">Solicita una visita técnica</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="carousel-slide">
+                            <article class="card">
+                                <div class="card-media">
+                                    <picture>
+                                        <source srcset="assets/ats-card-paneles.webp" type="image/webp">
+                                        <img src="assets/ats-card-paneles.jpg" alt="Panel de control industrial con botones e indicadores" width="1200" height="675" loading="lazy" decoding="async">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Paneles de control industrial</h3>
+                                    <p>Diseño y fabricación de paneles de control para maquinaria y procesos industriales, a la medida de tu planta.</p>
+                                    <a class="btn" href="#contact" data-service="Paneles de control industrial">Cotiza tu panel</a>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel-btn next" type="button" aria-label="Siguiente" aria-controls="service-track">&#10095;</button>
+                <p id="carousel-status" class="visually-hidden" aria-live="polite"></p>
             </div>
-            <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
-        </div>
-    </section>
+        </section>
 
-    <section id="about" class="about">
-        <h2>Sobre Nosotros</h2>
-        <p>En ATS, fusionamos la innovación tecnológica con la seguridad. Nuestro equipo de
-            expertos está dedicado a llevar a tu empresa al siguiente nivel mediante soluciones de vanguardia.</p>
-    </section>
+        <section id="about" class="about">
+            <div class="section-heading">
+                <h2>Sobre nosotros</h2>
+            </div>
+            <p>En ATS unimos capacitación en inteligencia artificial, desarrollo de software e ingeniería de redes e industrial. Así una sola empresa acompaña a la tuya desde la oficina hasta la planta.</p>
+        </section>
 
-    <section id="contact" class="contact">
-        <h2>Hablemos de tu Proyecto</h2>
-        <p>¿Listo para transformar tu negocio? Escríbenos y diseñemos juntos el futuro.</p>
-        <a href="mailto:contact@abystechnologies.com" class="btn">Enviar Correo</a>
-    </section>
+        <section id="contact" class="contact">
+            <div class="section-heading">
+                <h2>Hablemos de tu proyecto</h2>
+            </div>
+            <p class="contact-intro">Cuéntanos qué necesitas y te respondemos con una propuesta.</p>
+            <p class="contact-channels">
+                <a id="contact-email-link" href="#contact">Correo</a>
+                <a id="contact-whatsapp-inline" href="#contact" hidden>WhatsApp</a>
+            </p>
+            <!--
+              GitHub Pages no puede recibir el formulario. El envío abre el
+              correo o WhatsApp de quien visita. Para guardar los mensajes en
+              un servidor, sustituye el manejador de #contact-form en script.js
+              por una petición a un backend propio.
+            -->
+            <form id="contact-form" class="contact-form" action="#contact" method="post">
+                <div class="form-row form-row--split">
+                    <div class="form-field">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="empresa">Empresa <span class="optional">(opcional)</span></label>
+                        <input id="empresa" name="empresa" type="text" autocomplete="organization">
+                    </div>
+                </div>
+                <div class="form-row form-row--split">
+                    <div class="form-field">
+                        <label for="correo">Correo</label>
+                        <input id="correo" name="correo" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="telefono">Teléfono <span class="optional">(opcional)</span></label>
+                        <input id="telefono" name="telefono" type="tel" autocomplete="tel">
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="servicio">Servicio de interés</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="" selected disabled>Selecciona un servicio</option>
+                        <option>Cursos de IA y agentes para empresas</option>
+                        <option>Desarrollo web y software a medida</option>
+                        <option>Automatización</option>
+                        <option>Cableado estructurado y redes</option>
+                        <option>Cámaras de seguridad</option>
+                        <option>Paneles de control industrial</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn">Enviar por correo</button>
+                    <button type="button" class="btn btn-quiet" id="send-whatsapp" hidden>Enviar por WhatsApp</button>
+                </div>
+                <p id="form-status" class="form-status" role="status"></p>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Abys Technologies Solutions. Todos los derechos reservados.</p>
+        <p>&copy; <span id="copyright-year">2026</span> <span class="footer-brand">Abys Technologies Solutions</span>. Todos los derechos reservados.</p>
     </footer>
+
+    <a id="whatsapp-float" class="whatsapp-float" hidden href="#contact" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+            <path fill="currentColor" d="M20.5 3.5A11 11 0 0 0 2.1 17.2L1 23l5.9-1.1A11 11 0 0 0 20.5 3.5zM12 20.3a8.3 8.3 0 0 1-4.2-1.1l-.3-.2-3.5.7.7-3.4-.2-.3A8.3 8.3 0 1 1 12 20.3zm4.6-6.2c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8.9-.3.2-.6.1a6.8 6.8 0 0 1-2-1.2 7.5 7.5 0 0 1-1.4-1.7c-.1-.3 0-.4.1-.5l.4-.5.2-.3a1.7 1.7 0 0 0 0-.5c0-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.8 11.8 0 0 0 4.6 4 15 15 0 0 0 1.5.6 3.6 3.6 0 0 0 1.7.1 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/>
+        </svg>
+    </a>
 
     <script src="script.js"></script>
 </body>
