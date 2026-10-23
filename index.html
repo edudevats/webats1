@@ -36,7 +36,7 @@
     <link rel="icon" href="assets/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <link rel="preload" as="image" href="assets/logo.webp" type="image/webp">
-    <link rel="preload" as="image" href="assets/mano.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="assets/mano-fade.webp" type="image/webp" fetchpriority="high">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,7 +51,7 @@
             <source srcset="assets/logo.webp" type="image/webp">
             <img src="assets/logo.png" alt="" width="492" height="596" class="entrance-logo">
         </picture>
-        <div class="entrance-text">SYSTEM INITIALIZED</div>
+        <div class="entrance-text">SISTEMA INICIADO</div>
     </div>
 
     <header>
@@ -93,8 +93,8 @@
                 </div>
                 <div class="hero-image">
                     <picture>
-                        <source srcset="assets/mano.webp" type="image/webp">
-                        <img src="assets/mano.png" alt="Mano digital que representa la tecnología de Abys Technologies Solutions" width="1024" height="1024" fetchpriority="high" decoding="async">
+                        <source srcset="assets/mano-fade.webp" type="image/webp">
+                        <img src="assets/mano-fade.png" alt="Ilustración de una mano digital" width="1024" height="1024" fetchpriority="high" decoding="async">
                     </picture>
                 </div>
             </div>
@@ -105,7 +105,6 @@
                 <h2>Nuestros servicios</h2>
             </div>
             <div class="carousel" id="services-carousel" aria-roledescription="carrusel" aria-label="Servicios de ATS">
-                <button class="carousel-btn prev" type="button" aria-label="Anterior" aria-controls="service-track">&#10094;</button>
                 <div class="carousel-viewport">
                     <ul class="carousel-track" id="service-track">
                         <li class="carousel-slide">
@@ -113,7 +112,7 @@
                                 <div class="card-media">
                                     <picture>
                                         <source srcset="assets/ats-card-cursos.webp" type="image/webp">
-                                        <img src="assets/ats-card-cursos.jpg" alt="Equipo en una mesa revisando pantallas durante una capacitación" width="1200" height="675" loading="lazy" decoding="async">
+                                        <img src="assets/ats-card-cursos.jpg" alt="Ilustración de un microchip con birrete, circuitos y engranajes" width="1200" height="675" loading="lazy" decoding="async">
                                     </picture>
                                 </div>
                                 <div class="card-body">
@@ -124,6 +123,7 @@
                                         <li>Casos aplicados a tu industria</li>
                                         <li>Acompañamiento para poner en marcha tus primeros agentes</li>
                                     </ul>
+                                    <p class="card-area">En todo México y el mundo</p>
                                     <a class="btn" href="#contact" data-service="Cursos de IA y agentes para empresas">Solicita el temario</a>
                                 </div>
                             </article>
@@ -133,29 +133,40 @@
                                 <div class="card-media">
                                     <picture>
                                         <source srcset="assets/ats-card-web.webp" type="image/webp">
-                                        <img src="assets/ats-card-web.jpg" alt="Escritorio con monitores mostrando código de software" width="1200" height="675" loading="lazy" decoding="async">
+                                        <img src="assets/ats-card-web.jpg" alt="Ilustración de una pantalla con código y engranajes" width="1200" height="675" loading="lazy" decoding="async">
                                     </picture>
                                 </div>
                                 <div class="card-body">
                                     <h3>Desarrollo web y software a medida</h3>
                                     <p>Sitios web, aplicaciones y sistemas empresariales diseñados para tu operación, rápidos, seguros y fáciles de mantener.</p>
+                                    <ul>
+                                        <li>Sitios web y aplicaciones</li>
+                                        <li>Sistemas empresariales para tu operación</li>
+                                        <li>Rápidos, seguros y fáciles de mantener</li>
+                                    </ul>
+                                    <p class="card-area">En todo México y el mundo</p>
                                     <a class="btn" href="#contact" data-service="Desarrollo web y software a medida">Cotiza tu proyecto</a>
                                 </div>
                             </article>
                         </li>
-                        <!-- Automatización comparte ats-card-web hasta que haya una imagen propia. -->
                         <li class="carousel-slide">
                             <article class="card">
                                 <div class="card-media">
                                     <picture>
-                                        <source srcset="assets/ats-card-web.webp" type="image/webp">
-                                        <img src="assets/ats-card-web.jpg" alt="Pantallas con código en un escritorio de trabajo" width="1200" height="675" loading="lazy" decoding="async">
+                                        <source srcset="assets/ats-card-automatizacion.webp" type="image/webp">
+                                        <img src="assets/ats-card-automatizacion.jpg" alt="Ilustración: flujo automatizado entre correo, base de datos y documento" width="1200" height="675" loading="lazy" decoding="async">
                                     </picture>
                                 </div>
                                 <div class="card-body">
                                     <h3>Automatización</h3>
                                     <p>Conectamos tus sistemas y eliminamos tareas repetitivas para que tu equipo dedique su tiempo a lo que genera valor.</p>
-                                    <a class="btn" href="#contact" data-service="Automatización">Cuéntanos qué proceso quieres automatizar</a>
+                                    <ul>
+                                        <li>Conectamos tus sistemas</li>
+                                        <li>Eliminamos tareas repetitivas</li>
+                                        <li>Tu equipo dedica su tiempo a lo que genera valor</li>
+                                    </ul>
+                                    <p class="card-area">En todo México y el mundo</p>
+                                    <a class="btn" href="#contact" data-service="Automatización">Automatiza un proceso</a>
                                 </div>
                             </article>
                         </li>
@@ -164,12 +175,18 @@
                                 <div class="card-media">
                                     <picture>
                                         <source srcset="assets/ats-card-redes.webp" type="image/webp">
-                                        <img src="assets/ats-card-redes.jpg" alt="Rack de telecomunicaciones con cableado de red" width="1200" height="675" loading="lazy" decoding="async">
+                                        <img src="assets/ats-card-redes.jpg" alt="Ilustración de un rack de red y cableado estructurado" width="1200" height="675" loading="lazy" decoding="async">
                                     </picture>
                                 </div>
                                 <div class="card-body">
                                     <h3>Cableado estructurado y redes</h3>
                                     <p>Diseño e instalación de cableado estructurado y redes para oficinas, naves y plantas: una infraestructura ordenada, estable y lista para crecer.</p>
+                                    <ul>
+                                        <li>Diseño e instalación de cableado estructurado y redes</li>
+                                        <li>Para oficinas, naves y plantas</li>
+                                        <li>Infraestructura ordenada, estable y lista para crecer</li>
+                                    </ul>
+                                    <p class="card-area">En CDMX y Estado de México</p>
                                     <a class="btn" href="#contact" data-service="Cableado estructurado y redes">Solicita una visita técnica</a>
                                 </div>
                             </article>
@@ -179,12 +196,17 @@
                                 <div class="card-media">
                                     <picture>
                                         <source srcset="assets/ats-card-camaras.webp" type="image/webp">
-                                        <img src="assets/ats-card-camaras.jpg" alt="Cámara de seguridad tipo domo en una oficina" width="1200" height="675" loading="lazy" decoding="async">
+                                        <img src="assets/ats-card-camaras.jpg" alt="Ilustración de una cámara de seguridad" width="1200" height="675" loading="lazy" decoding="async">
                                     </picture>
                                 </div>
                                 <div class="card-body">
                                     <h3>Cámaras de seguridad</h3>
                                     <p>Instalación de sistemas de videovigilancia para oficinas, comercios, naves y plantas, integrados con tu red para que puedas ver lo que pasa en tu empresa desde cualquier lugar.</p>
+                                    <ul>
+                                        <li>Instalación de sistemas de videovigilancia</li>
+                                        <li>Para oficinas, comercios, naves y plantas</li>
+                                        <li>Integrados con tu red</li>
+                                    </ul>
                                     <a class="btn" href="#contact" data-service="Cámaras de seguridad">Solicita una evaluación de seguridad</a>
                                 </div>
                             </article>
@@ -194,19 +216,28 @@
                                 <div class="card-media">
                                     <picture>
                                         <source srcset="assets/ats-card-paneles.webp" type="image/webp">
-                                        <img src="assets/ats-card-paneles.jpg" alt="Panel de control industrial con botones e indicadores" width="1200" height="675" loading="lazy" decoding="async">
+                                        <img src="assets/ats-card-paneles.jpg" alt="Ilustración de un panel de control industrial" width="1200" height="675" loading="lazy" decoding="async">
                                     </picture>
                                 </div>
                                 <div class="card-body">
                                     <h3>Paneles de control industrial</h3>
                                     <p>Diseño y fabricación de paneles de control para maquinaria y procesos industriales, a la medida de tu planta.</p>
+                                    <ul>
+                                        <li>Diseño y fabricación de paneles de control</li>
+                                        <li>Para maquinaria y procesos industriales</li>
+                                        <li>A la medida de tu planta</li>
+                                    </ul>
+                                    <p class="card-area">En CDMX y Estado de México</p>
                                     <a class="btn" href="#contact" data-service="Paneles de control industrial">Cotiza tu panel</a>
                                 </div>
                             </article>
                         </li>
                     </ul>
                 </div>
-                <button class="carousel-btn next" type="button" aria-label="Siguiente" aria-controls="service-track">&#10095;</button>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" type="button" aria-label="Anterior" aria-controls="service-track">&#10094;</button>
+                    <button class="carousel-btn next" type="button" aria-label="Siguiente" aria-controls="service-track">&#10095;</button>
+                </div>
                 <p id="carousel-status" class="visually-hidden" aria-live="polite"></p>
             </div>
         </section>

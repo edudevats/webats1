@@ -62,7 +62,6 @@ function openExternal(url) {
 document.addEventListener('DOMContentLoaded', () => {
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const overlay = document.getElementById('entrance-overlay');
-    const heroText = document.querySelector('.hero h1');
 
     const brandEl = document.querySelector('.company-name');
     const taglineEl = document.querySelector('.tagline');
@@ -78,30 +77,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (reduceMotion) {
         if (overlay) overlay.remove();
-    } else if (overlay && heroText) {
+    } else if (overlay) {
         window.setTimeout(() => {
             overlay.classList.add('shatter');
             window.setTimeout(() => {
                 overlay.style.display = 'none';
-                startHeroTyping(heroText);
-            }, 800);
-        }, 3000);
-    }
-
-    function startHeroTyping(node) {
-        const originalText = node.textContent;
-        node.textContent = '';
-        let index = 0;
-
-        const step = () => {
-            if (index <= originalText.length) {
-                node.textContent = originalText.slice(0, index);
-                index += 1;
-                if (index <= originalText.length) window.setTimeout(step, 30);
-            }
-        };
-
-        window.setTimeout(step, 400);
+            }, 300);
+        }, 700);
     }
 
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
